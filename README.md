@@ -22,7 +22,7 @@ Cada tipo de teste foi separado em pastas para facilitar o entendimento e a manu
 
 ```
 
-whatsapp-chatbot-robot/
+whatsapp-chatbot-automation/
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
@@ -205,5 +205,6 @@ O diretorio `evidence/` contem apenas exemplos ilustrativos dos tipos de evidenc
 ---
 
 Ele não tem como objetivo ser um framework completo, mas sim demonstrar entendimento do processo, boas decisões técnicas e capacidade de explicar o que foi feito.
+
 
 
