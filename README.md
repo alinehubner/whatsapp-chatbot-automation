@@ -22,12 +22,71 @@ Cada tipo de teste foi separado em pastas para facilitar o entendimento e a manu
 
 ```
 
-├── e2e/                 # Testes E2E (Cypress)
-├── api/                 # Testes de API (Postman / Newman)
-├── load/                # Testes de Carga (k6)
-├── .github/
-│ └── workflows/ci.yml   # Pipeline CI/CD (GitHub Actions)
-└── README.md
+whatsapp-chatbot-robot/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── robot.yaml
+├── package.json
+├── scripts/
+│   ├── run_local.ps1
+│   ├── run_local.sh
+│   ├── run_bs.ps1
+│   ├── run_bs.sh
+│   └── doctor.ps1
+│
+├── configs/
+│   ├── env/
+│   │   ├── qa.yaml
+│   │   └── prod.yaml
+│   ├── devices/
+│   │   ├── local_emulator.yaml
+│   │   └── browserstack_pixel.yaml
+│   └── caps/
+│       ├── browserstack_android.json
+│       └── local_android.json
+│
+├── tests/
+│   ├── smoke/
+│   │   └── smoke_whatsapp_chatbot.robot
+│   └── regression/
+│       └── .gitkeep
+│
+├── resources/
+│   ├── services/
+│   │   ├── appium_driver.robot
+│   │   ├── browserstack_driver.robot
+│   │   └── local_driver.robot
+│   ├── pages/
+│   │   ├── whatsapp_home_page.robot
+│   │   ├── whatsapp_chat_page.robot
+│   │   └── whatsapp_permissions_page.robot
+│   ├── keywords/
+│   │   ├── common_keywords.robot
+│   │   ├── whatsapp_keywords.robot
+│   │   └── chatbot_keywords.robot
+│   └── variables/
+│       ├── locators.robot
+│       └── constants.robot
+│
+├── data/
+│   ├── messages/
+│   │   ├── intents_core.yaml
+│   │   └── intents_fallback.yaml
+│   └── users/
+│       └── users_example.json
+│
+├── libs/
+│   ├── __init__.py
+│   └── helpers.py
+│
+├── results/
+│   └── .gitkeep
+│
+└── .github/
+    └── workflows/
+        └── mobile-tests-browserstack.yml
+
 
 ```
 
@@ -146,4 +205,5 @@ O diretorio `evidence/` contem apenas exemplos ilustrativos dos tipos de evidenc
 ---
 
 Ele não tem como objetivo ser um framework completo, mas sim demonstrar entendimento do processo, boas decisões técnicas e capacidade de explicar o que foi feito.
+
 
